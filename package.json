@@ -5,8 +5,9 @@
   "main": "./dist/index.js",
   "scripts": {
     "start": "NODE_ENV=production node ./dist/index.js",
-    "test": "eslint .",
-    "dev": "babel-watch ./src/index.js 3000",
+    "test:watch": "eslint . && jest --watchAll",
+    "test": "eslint . && jest",
+    "dev": "babel-watch ./src/index.js",
     "build": "babel -d ./dist ./src -s",
     "precommit": "npm run test",
     "prepush": "npm run test"
@@ -40,7 +41,10 @@
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-security": "^1.4.0",
     "eslint-plugin-standard": "^3.0.1",
-    "husky": "^0.14.3"
+    "husky": "^0.14.3",
+    "jest": "^22.4.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "crypto-js": "^3.1.9-1"
+  }
 }
