@@ -6,7 +6,7 @@
   "scripts": {
     "start": "NODE_ENV=production node ./dist/app/index.js",
     "test:watch": "jest --watchAll",
-    "test": "jest && eslint --fix .",
+    "test": "eslint --fix .",
     "dev": "babel-watch ./src/app/index.js",
     "build": "babel -d ./dist ./src -s",
     "precommit": "npm run test",
@@ -39,7 +39,7 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jest": "^21.5.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-react": "^7.7.0",
     "eslint-plugin-security": "^1.4.0",
