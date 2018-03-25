@@ -9,18 +9,19 @@ class Blockchain {
     const lastBlock = this.chain[this.chain.length - 1];
     const block = Block.mineBlock(lastBlock, data);
     this.chain.push(block);
+    return block;
   }
 
   replaceChain(chain) {
     if (!this.isValidChain(chain)) {
-      console.log('The newBlockchain is not valid');
+      console.log('\x1b[91m[blockchain]\t reject incoming blockchain\x1b[0m');
       return;
     }
     if (chain.length <= this.chain.length) {
-      console.log('The newBlockchain is no longer than the current chain.');
+      console.log('\x1b[90m[blockchain]\t blockchain synced\x1b[0m');
       return;
     }
-    console.log('Relacing current chain with the newBlockchain.');
+    console.log('\x1b[33m[blockchain]\t blockchain updated\x1b[0m');
     this.chain = chain;
   }
 
