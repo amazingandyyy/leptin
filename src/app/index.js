@@ -32,8 +32,7 @@ app.get('/blocks', (req, res) => {
 // Handle POST /mine
 app.post('/mine', (req, res) => {
   const block = bc.addBlock(req.body.data);
-  console.log(`\x1b[32m[blockchain]\t new block mined ${block.hash.substring(58, 63)}\x1b[0m`);
-
+  console.log(`\n\x1b[32m[blockchain]\t new block mined ${block.hash.substring(58, 63)}`);
   // sync to all chain whenever it find/mine a block
   p2pServer.syncChains();
 
