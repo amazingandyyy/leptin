@@ -22,8 +22,26 @@ class Transaction {
         address: recipientAddr
       }
     ]);
+    Transaction.signTransaction(transcation, senderWallet);
 
     return transcation;
+  }
+
+  static signTransaction(transaction, senderWallet) {
+    transaction.input = {
+      time: Date.now(), // 1970
+      amount: senderWallet.balance,
+      address: senderWallet.publicKey,
+      signature: senderWallet.sign(Util.hash(transaction.outputs))
+    };
+  }
+
+  static verifyTransaction(transaction) {
+    return Util.verifySignature(
+      transaction.input.address,
+      transaction.input.signature,
+      Util.hash(transaction.outputs)
+    );
   }
 }
 

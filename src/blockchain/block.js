@@ -1,4 +1,4 @@
-import SHA256 from 'crypto-js/sha256';
+import Util from '../utility';
 import { DIFFICULTY, MINE_RATE } from '../config';
 
 class Block {
@@ -45,7 +45,7 @@ class Block {
   }
 
   static hash(timestamp, lastHash, data, nonce, difficulty) {
-    return SHA256(`${timestamp}${lastHash}${data}${nonce}${difficulty}`).toString();
+    return Util.hash(`${timestamp}${lastHash}${data}${nonce}${difficulty}`);
   }
 
   static hashBlock(block) {

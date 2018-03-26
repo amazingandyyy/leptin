@@ -14,6 +14,14 @@ class Wallet {
       balance:    ${this.balance}
     `;
   }
+
+  sign(dataHash) {
+    return this.keyPair.sign(dataHash);
+  }
+
+  verify(sig) {
+    return this.keyPair.verify(sig);
+  }
 }
 
 export default Wallet;

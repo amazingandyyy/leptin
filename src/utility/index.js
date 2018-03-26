@@ -1,5 +1,6 @@
 import { ec as EC } from 'elliptic';
 import uuid from 'uuid/v1';
+import SHA256 from 'crypto-js/sha256';
 
 const ec = new EC('secp256k1');
 // sec-p-256-k-1
@@ -15,6 +16,13 @@ class Util {
   }
   static tixId() {
     return uuid();
+  }
+  static hash(data) {
+    return SHA256(JSON.stringify(data)).toString();
+  }
+
+  static verifySignature(publicKey, signature, dataHash) {
+    return ec.keyFromPublic(publicKey, 'hex').verify(dataHash, signature);
   }
 }
 
