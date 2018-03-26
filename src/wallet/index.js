@@ -45,7 +45,7 @@ class Wallet {
       balance = recentInputT.outputs.find(output => output.address === this.publicKey).amount;
       startTime = recentInputT.input.timestamp;
     }
-
+    
     transactions.forEach(transaction => {
       if (transaction.input.timestamp > startTime) {
         transaction.outputs.forEach(output => {

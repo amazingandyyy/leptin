@@ -1,6 +1,7 @@
 import Wallet from './index';
 import TransactionPool from './transaction-pool';
 import Blockchain from '../blockchain';
+import { INITAL_BALANCE } from '../config';
 
 describe('Wallet', () => {
   let wallet;
@@ -39,6 +40,29 @@ describe('Wallet', () => {
           .map(output => output.amount))
           .toEqual([sendAmount, sendAmount]);
       });
+    });
+  });
+
+  describe('calculate a balance', () => {
+    let addBalance;
+    let repeatAdd;
+    let senderWallet;
+    beforeEach(() => {
+      senderWallet = new Wallet();
+      addBalance = 20;
+      repeatAdd = 3;
+      for (let i = 0; i < repeatAdd; i++) {
+        senderWallet.createTransaction(wallet.publicKey, addBalance, bc, tp);
+      }
+      bc.addBlock(tp.transactions);
+    });
+
+    it('calculate the balance for blockchain transactions matching the recipient', () => {
+      expect(wallet.calculateBalance(bc)).toEqual(INITAL_BALANCE + (addBalance * repeatAdd));
+    });
+
+    it('calculate the balance for blockchain transactions matching the sender', () => {
+      expect(senderWallet.calculateBalance(bc)).toEqual(INITAL_BALANCE - (addBalance * repeatAdd));
     });
   });
 });

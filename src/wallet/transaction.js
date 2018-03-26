@@ -59,7 +59,7 @@ class Transaction {
 
   static signTransaction(transaction, senderWallet) {
     transaction.input = {
-      time: Date.now(), // 1970
+      timestamp: Date.now(), // 1970
       amount: senderWallet.balance,
       address: senderWallet.publicKey,
       signature: senderWallet.sign(Util.hash(transaction.outputs))
