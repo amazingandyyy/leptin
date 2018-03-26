@@ -27,6 +27,7 @@ class Block {
   }
 
   static mineBlock(lastBlock, data) {
+    console.log('\r\x1b[90m[blockchain]\t start mining...');
     const lastHash = lastBlock.hash;
     let { difficulty } = lastBlock;
     let timestamp;
@@ -38,7 +39,7 @@ class Block {
       hash = this.hash(timestamp, lastHash, data, nonce, difficulty);
       timestamp = Date.now();
       difficulty = Block.adjustDifficulty(lastBlock, timestamp);
-      process.stdout.write(`\r\x1b[90m[blockchain]\t start mining..${'.'.repeat(Math.floor(nonce++ / (500 * (DIFFICULTY ** 2))))}\x1b[0m`);
+      // process.stdout.write(`\r\x1b[90m[blockchain]\t start mining..${'.'.repeat(Math.floor(nonce++ / (500 * (DIFFICULTY ** 2))))}\x1b[0m`);
     } while (hash.substring(0, difficulty) !== '0'.repeat(difficulty));
     return new this(timestamp, lastHash, hash, data, nonce, difficulty);
   }

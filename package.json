@@ -6,11 +6,13 @@
   "scripts": {
     "start": "NODE_ENV=production node ./dist/app/index.js",
     "test:watch": "jest --watchAll",
-    "test": "eslint --fix .",
+    "test": "npm run eslint:fix && jest",
+    "eslint:fix": "eslint --fix .",
     "dev": "babel-watch ./src/app/index.js",
+    "dev:test": "babel-watch ./src/dev.js",
     "build": "babel -d ./dist ./src -s",
-    "precommit": "npm run test",
-    "prepush": "npm run test"
+    "precommit": "eslint:fix",
+    "prepush": "eslint:fix"
   },
   "repository": {
     "type": "git",
