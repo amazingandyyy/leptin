@@ -4,9 +4,9 @@
   "description": "This is a crypto built in node, supporting PoW.",
   "main": "./dist/index.js",
   "scripts": {
-    "start": "NODE_ENV=production node ./dist/app/index.js",
-    "test:watch": "jest --watchAll",
-    "test": "npm run eslint:fix && jest",
+    "start": "cross-env NODE_ENV=production node ./dist/app/index.js",
+    "test:watch": "cross-env NODE_ENV=testing jest --watchAll",
+    "test": "cross-env NODE_ENV=testing npm run eslint:fix && jest --forceExit",
     "eslint:fix": "eslint --fix .",
     "dev": "babel-watch ./src/app/index.js",
     "dev:test": "babel-watch ./src/dev.js",
@@ -15,7 +15,8 @@
     "prepush": "npm run eslint:fix"
   },
   "jest": {
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": ["<rootDir>/node_modules/", "<rootDir>/dist/"]
   },
   "repository": {
     "type": "git",
@@ -37,6 +38,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-watch": "^2.0.7",
+    "cross-env": "^5.1.4",
     "eslint": "^4.14.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-standard": "^10.2.1",

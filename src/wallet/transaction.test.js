@@ -1,5 +1,6 @@
 import Transaction from './transaction';
 import Wallet from './index';
+import { MINING_REWARDS } from '../config';
 
 describe('Transaction', () => {
   let transaction;
@@ -65,6 +66,17 @@ describe('Transaction', () => {
     it('outputs an amount for the next recipient', () => {
       expect(transaction.outputs.find(output => output.address === newRecipient).amount)
         .toEqual(newAmount);
+    });
+  });
+
+  describe('creating a reward transaction', () => {
+    beforeEach(() => {
+      transaction = Transaction.rewardsMiner(wallet, Wallet.blockchainWallet());
+    });
+
+    it(`rewards miner's wallet ${MINING_REWARDS}`, () => {
+      expect(transaction.outputs.find(output => output.address === wallet.publicKey).amount)
+        .toBe(MINING_REWARDS);
     });
   });
 });

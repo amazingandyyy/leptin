@@ -6,6 +6,12 @@ import bodyParser from 'body-parser';
 import Blockchain from '../blockchain';
 // import P2pServer
 import P2pServer from './p2p';
+// import Wallet
+import Wallet from '../wallet';
+// imort Transaction Pool
+import TransactionPool from '../wallet/transaction-pool';
+// imort miner
+import Miner from './miner';
 
 // define port
 const HTTP_PORT = process.env.HTTP_PORT || 3001;
@@ -14,9 +20,14 @@ const app = express();
 
 // create a Blockchain instance
 const bc = new Blockchain();
-
+// create wallet instance
+const wallet = new Wallet();
+// create transaction pool instance
+const tp = new TransactionPool();
 // create a P2pServer instance
-const p2pServer = new P2pServer(bc);
+const p2pServer = new P2pServer(bc, tp);
+// create miner instance
+const miner = new Miner(bc, tp, wallet, p2pServer);
 
 // use body-parser json middleware
 app.use(bodyParser.json());
@@ -38,6 +49,33 @@ app.post('/mine', (req, res) => {
 
   // return the latest blockchain;
   res.redirect('/blocks');
+});
+
+// Handle POST /mineTransactions
+app.post('/mineTransactions', (req, res) => {
+  miner.mine();
+  // return the latest blockchain;
+  res.redirect('/blocks');
+});
+
+// Handle GET /trnasactions
+app.get('/transactions', (req, res) => {
+  res.json(tp.transactions);
+});
+
+// Handle GET /trnasactions
+app.post('/transaction', (req, res) => {
+  const { recipient, amount } = req.body;
+  const transaction = wallet.createTransaction(recipient, amount, bc, tp);
+  // broadcast transaction
+  p2pServer.broadcastTransaction(transaction);
+  // send back transactions
+  res.redirect('/transactions');
+});
+
+// Handle GET /wallet
+app.get('/public-key', (req, res) => {
+  res.json({ publicKey: wallet.publicKey });
 });
 
 // App starts listening

@@ -27,7 +27,7 @@ class Block {
   }
 
   static mineBlock(lastBlock, data) {
-    console.log('\r\x1b[90m[blockchain]\t start mining...');
+    if (process.env.NODE_ENV !== 'testing') console.log('\r\x1b[90m[blockchain]\t start mining...');
     const lastHash = lastBlock.hash;
     let { difficulty } = lastBlock;
     let timestamp;
