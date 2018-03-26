@@ -1,4 +1,5 @@
 import { ec as EC } from 'elliptic';
+import uuid from 'uuid/v1';
 
 const ec = new EC('secp256k1');
 // sec-p-256-k-1
@@ -11,6 +12,9 @@ const ec = new EC('secp256k1');
 class Util {
   static genKeyPair() {
     return ec.genKeyPair();
+  }
+  static tixId() {
+    return uuid();
   }
 }
 
