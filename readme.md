@@ -1,6 +1,6 @@
 # crypto-in-node [![Build Status](https://travis-ci.org/amazingandyyy/crypto-in-node.svg?branch=master)](https://travis-ci.org/amazingandyyy/crypto-in-node)
 
-This is continuing project based on [blockchain-in-node](https://github.com/amazingandyyy/blockchain-in-node/).
+This is continuing project based on [blockchain-in-node](https://github.com/amazingandyyy/blockchain-in-node/), Crypto = Blockchain + Transaction + Cryptography
 
 ## Why another repo? Because crypto is different from blockchain
 
