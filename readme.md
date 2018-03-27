@@ -1,8 +1,8 @@
 <h1 align="center">
-crypto-in-node
+Crypto in Nodejs
 </h1>
 <p align="center">
-A cryptocurrency built in Nodejs
+A cryptocurrency completely built in Nodejs.
 </p>
 
 <p align="center">
@@ -21,9 +21,8 @@ A cryptocurrency built in Nodejs
 
 > Because crypto is different from blockchain
 
-- Crypto = Blockchain + Transaction + Cryptography = Crypto
 - After building a [blockchain](https://github.com/amazingandyyy/blockchain-in-node) in node, I want to build a crypto which impelement address, signatures, transactions, and broadcasting features.
-- Learning to build a crypto can help us understand **how to customize blockchain state** to match our application needs and really revealed the power of blockchain.
+- Learning to build a crypto can help us understand **how to customize blockchain state** to match our application needs and **revealed the power of blockchain**.
 
 ## This is a lovely demo for
 
@@ -50,7 +49,7 @@ $ HTTP_PORT=3003 P2P_PORT=5003 PEERS=ws://localhost:5002,ws://localhost:5003 npm
 
 ## Author
 
-Andy Chen([amazingandyyy](https://github.com/amazingandyyy))
+[amazingandyyy (Andy Chen)](https://github.com/amazingandyyy)
 
 ## Resources
 
@@ -68,7 +67,7 @@ Rajeev Sakhuja](https://www.udemy.com/ethereum-dapp/learn/v4/)
 ](https://www.udemy.com/build-blockchain/learn/v4/)
 
 
-## My love to
+## Standard
 
 [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
 
