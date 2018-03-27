@@ -2,9 +2,9 @@
 
 This is continuing project based on [blockchain-in-node](https://github.com/amazingandyyy/blockchain-in-node/).
 
-## Why another repo?
+## Why another repo? Because crypto is different from blockchain
 
-- Crypto = Blockchain + Transactions
+- Crypto = Blockchain + Transaction + Cryptography = Crypto
 - After building a blobkchain demo in node, I want to build a crypto which impelement address, signatures, and broadcasting feature on that of the [blockchain](https://github.com/amazingandyyy/blockchain-in-node).
 - Learning to build a crypto can help us understand how to **customize blockchain state** in match our application needs
 
