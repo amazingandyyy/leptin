@@ -1,9 +1,9 @@
 <h1 align="center">
 crypto-in-node
 </h1>
-<h2 align="center">
+<p align="center">
 A cryptocurrency built in Nodejs
-</h2>
+</p>
 
 <p align="center">
     <a href="https://travis-ci.org/amazingandyyy/crypto-in-node" target='_blank'>
@@ -14,9 +14,12 @@ A cryptocurrency built in Nodejs
     </a>
 </p>
 
-> This is a continuing project based on [blockchain-in-node](https://github.com/amazingandyyy/blockchain-in-node/). Crypto = Blockchain + Transaction + Cryptography
+> This is a continuing project based on [blockchain-in-node](https://github.com/amazingandyyy/blockchain-in-node/)
+> Crypto = Blockchain + Transaction + Cryptography
 
-## Why another repo? Because crypto is different from blockchain
+## Why another repo? 
+
+> Because crypto is different from blockchain
 
 - Crypto = Blockchain + Transaction + Cryptography = Crypto
 - After building a [blockchain](https://github.com/amazingandyyy/blockchain-in-node) in node, I want to build a crypto which impelement address, signatures, transactions, and broadcasting features.
@@ -49,10 +52,6 @@ $ HTTP_PORT=3003 P2P_PORT=5003 PEERS=ws://localhost:5002,ws://localhost:5003 npm
 
 Andy Chen([amazingandyyy](https://github.com/amazingandyyy))
 
-## License
-
-[MIT](https://github.com/amazingandyyy/crypto-in-node/blob/master/LICENSE)
-
 ## Resources
 
 - [Blockchain 101 - A Visual Demo by 
@@ -67,6 +66,9 @@ Rajeev Sakhuja](https://www.udemy.com/ethereum-dapp/learn/v4/)
 ](https://medium.com/@lhartikk/a-blockchain-in-200-lines-of-code-963cc1cc0e54)
 - [Build a Blockchain and a Cryptocurrency from Scratch
 ](https://www.udemy.com/build-blockchain/learn/v4/)
+
+
+## My love to
 
 [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
 
