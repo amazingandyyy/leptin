@@ -14,8 +14,7 @@ A cryptocurrency completely built in Nodejs.
     </a>
 </p>
 
-> This is a continuing project based on [blockchain-in-node](https://github.com/amazingandyyy/blockchain-in-node/)
-> Crypto = Blockchain + Transaction + Cryptography
+> This is a continuing project based on [blockchain-in-node](https://github.com/amazingandyyy/blockchain-in-node/).
 
 ## Why another repo? 
 
