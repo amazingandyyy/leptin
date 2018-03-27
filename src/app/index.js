@@ -73,9 +73,14 @@ app.post('/transaction', (req, res) => {
   res.redirect('/transactions');
 });
 
-// Handle GET /wallet
+// Handle GET /public-key
 app.get('/public-key', (req, res) => {
   res.json({ publicKey: wallet.publicKey });
+});
+
+// Handle GET /wallet
+app.get('/wallet', (req, res) => {
+  res.json({ wallet });
 });
 
 // App starts listening
