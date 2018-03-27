@@ -1,6 +1,20 @@
-# crypto-in-node [![Build Status](https://travis-ci.org/amazingandyyy/crypto-in-node.svg?branch=master)](https://travis-ci.org/amazingandyyy/crypto-in-node)
+<h1 align="center">
+crypto-in-node
+</h1>
+<h2 align="center">
+A cryptocurrency built in Nodejs
+</h2>
 
-This is continuing project based on [blockchain-in-node](https://github.com/amazingandyyy/blockchain-in-node/), Crypto = Blockchain + Transaction + Cryptography
+<p align="center">
+    <a href="https://travis-ci.org/amazingandyyy/crypto-in-node" target='_blank'>
+      <img src="https://travis-ci.org/amazingandyyy/crypto-in-node.svg?branch=master" alt="Travis Build Status"/>
+    </a>
+    <a href="https://github.com/amazingandyyy/crypto-in-node/blob/master/LICENSE">
+      <img src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+    </a>
+</p>
+
+> This is a continuing project based on [blockchain-in-node](https://github.com/amazingandyyy/blockchain-in-node/). Crypto = Blockchain + Transaction + Cryptography
 
 ## Why another repo? Because crypto is different from blockchain
 
@@ -35,7 +49,7 @@ $ HTTP_PORT=3003 P2P_PORT=5003 PEERS=ws://localhost:5002,ws://localhost:5003 npm
 
 Andy Chen([amazingandyyy](https://github.com/amazingandyyy))
 
-## LICENSE
+## License
 
 [MIT](https://github.com/amazingandyyy/crypto-in-node/blob/master/LICENSE)
 
@@ -55,3 +69,5 @@ Rajeev Sakhuja](https://www.udemy.com/ethereum-dapp/learn/v4/)
 ](https://www.udemy.com/build-blockchain/learn/v4/)
 
 [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
+
+[![Airbnb Javascript Style Guide](https://camo.githubusercontent.com/546205bd8f3e039eb83c8f7f8a887238d25532d5/68747470733a2f2f7261772e6769746861636b2e636f6d2f746f6d656b77692f6a6176617363726970742f393566626638622f6261646765732f6269672e737667)](https://github.com/airbnb/javascript)
