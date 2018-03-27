@@ -45,12 +45,12 @@ Andy Chen([amazingandyyy](https://github.com/amazingandyyy))
 Anders Brownworth](https://www.youtube.com/watch?v=_160oMzblY8&t=2s)
 - [Blockchain 101 - Part 2 - Public / Private Keys and Signing
  by Anders Brownworth](https://www.youtube.com/watch?v=xIDL_akeras&t=184s)
+- [Ethereum : Decentralized Application Design & Development by 
+Rajeev Sakhuja](https://www.udemy.com/ethereum-dapp/learn/v4/)
 - [Ethereum and Solidity: The Complete Developer's Guide
  by Stephen Grider](https://www.udemy.com/ethereum-and-solidity-the-complete-developers-guide/learn/v4/)
 - [Blockchain Programming Using Javascript
 ](https://medium.com/@lhartikk/a-blockchain-in-200-lines-of-code-963cc1cc0e54)
-- [Blockchain Programming Using Javascript
-](https://www.udemy.com/blockchain-programming-using-javascript/learn/v4/overview)
 - [Build a Blockchain and a Cryptocurrency from Scratch
 ](https://www.udemy.com/build-blockchain/learn/v4/)
 
