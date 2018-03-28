@@ -12,6 +12,9 @@ A cryptocurrency completely built in Nodejs.
     <a href="https://github.com/amazingandyyy/crypto-in-node/blob/master/LICENSE">
       <img src="https://img.shields.io/badge/License-MIT-yellow.svg" />
     </a>
+    <a href="https://github.com/amazingandyyy/crypto-in-node/pulls">
+      <img src="https://camo.githubusercontent.com/d4e0f63e9613ee474a7dfdc23c240b9795712c96/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5052732d77656c636f6d652d627269676874677265656e2e737667" />
+    </a>
 </p>
 
 > This is a continuing project based on [blockchain-in-node](https://github.com/amazingandyyy/blockchain-in-node/).
