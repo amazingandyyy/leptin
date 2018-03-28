@@ -28,11 +28,13 @@ A cryptocurrency completely built in Nodejs.
 
 ## This is a lovely demo for
 
-- Decent Idea of how Blocks, Chain, Mining, Nodes, Transaction work with each others.
-- How to do them in Node
-- How to use sha256 to do PoW(Proof of Work)
-- Cryptography: signatures, address, provate keys work with each other
-- How pending transaction and mining actually work
+- Idea of how Blockschain, Mining, Nodes, Transaction work with each others.
+- Network synchronizing with websocket
+- Transactions(p2p sending)
+- Wallet (calculating balance)
+- secp256k1(encrypt/verify/sigital signatures), 
+- Mining(proof of work) and Rewards
+- Dynamical difficulty
 
 ## Run it on your machine
 
