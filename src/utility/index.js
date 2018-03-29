@@ -1,6 +1,6 @@
 import { ec as EC } from 'elliptic';
-import uuid from 'uuid/v1';
 import SHA256 from 'crypto-js/sha256';
+import uuid from './uuid';
 
 const ec = new EC('secp256k1');
 // sec-p-256-k-1
