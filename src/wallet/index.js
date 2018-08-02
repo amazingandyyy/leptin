@@ -6,7 +6,7 @@ class Wallet {
   constructor() {
     this.balance = INITAL_BALANCE;
     this.keyPair = Util.genKeyPair();
-    this.publicKey = this.keyPair.getPublic().encode('hex');
+    this.publicKey = this.keyPair.getPublic().encode('createHash');
   }
 
   toString() {
