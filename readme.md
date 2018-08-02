@@ -1,18 +1,18 @@
 <h1 align="center">
-Crypto in Nodejs
+Leptin
 </h1>
 <p align="center">
 A cryptocurrency completely built in Nodejs.
 </p>
 
 <p align="center">
-    <a href="https://travis-ci.org/amazingandyyy/crypto-in-node" target='_blank'>
-      <img src="https://travis-ci.org/amazingandyyy/crypto-in-node.svg?branch=master" alt="Travis Build Status"/>
+    <a href="https://travis-ci.org/amazingandyyy/leptin" target='_blank'>
+      <img src="https://travis-ci.org/amazingandyyy/leptin.svg?branch=master" alt="Travis Build Status"/>
     </a>
-    <a href="https://github.com/amazingandyyy/crypto-in-node/blob/master/LICENSE">
+    <a href="https://github.com/amazingandyyy/leptin/blob/master/LICENSE">
       <img src="https://img.shields.io/badge/License-MIT-yellow.svg" />
     </a>
-    <a href="https://github.com/amazingandyyy/crypto-in-node/pulls">
+    <a href="https://github.com/amazingandyyy/leptin/pulls">
       <img src="https://camo.githubusercontent.com/d4e0f63e9613ee474a7dfdc23c240b9795712c96/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5052732d77656c636f6d652d627269676874677265656e2e737667" />
     </a>
 </p>
@@ -39,7 +39,7 @@ A cryptocurrency completely built in Nodejs.
 ## Run it on your machine
 
 ```
-$ npm clone https://github.com/amazingandyyy/crypto-in-node.git
+$ npm clone https://github.com/amazingandyyy/leptin.git
 $ npm i
 $ npm run dev
 // you will have
