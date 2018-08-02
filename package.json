@@ -1,5 +1,5 @@
 {
-  "name": "crypto-in-node",
+  "name": "leptin",
   "version": "0.0.1",
   "description": "This is a crypto built in node, supporting PoW.",
   "main": "./dist/index.js",
@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amazingandyyy/crypto-in-node.git"
+    "url": "git+https://github.com/amazingandyyy/leptin.git"
   },
   "keywords": [
     "blockchain",
