@@ -1,5 +1,5 @@
 <h1 align="center">
-Leptin
+Leptin 🔗
 </h1>
 <p align="center">
 A cryptocurrency completely built in Nodejs.
