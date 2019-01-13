@@ -21,7 +21,7 @@ A cryptocurrency completely built in Nodejs.
 
 ## Why another repo? 
 
-> Because crypto is different from blockchain
+> Because blockchain is different from crypto!
 
 - After building a [blockchain](https://github.com/amazingandyyy/blockchain-in-node) in node, I want to build a crypto which impelement address, signatures, transactions, and broadcasting features.
 - Learning to build a crypto can help us understand **how to customize blockchain state** to match our application needs and **revealed the power of blockchain**.
