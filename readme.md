@@ -39,7 +39,7 @@ A cryptocurrency completely built in Nodejs.
 ## Run it on your machine
 
 ```
-$ npm clone https://github.com/amazingandyyy/leptin.git
+$ git clone https://github.com/amazingandyyy/leptin.git
 $ npm i
 $ npm run dev
 // you will have
