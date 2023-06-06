@@ -6,9 +6,6 @@ A cryptocurrency completely built in Nodejs.
 </p>
 
 <p align="center">
-    <a href="https://travis-ci.org/amazingandyyy/leptin" target='_blank'>
-      <img src="https://travis-ci.org/amazingandyyy/leptin.svg?branch=master" alt="Travis Build Status"/>
-    </a>
     <a href="https://github.com/amazingandyyy/leptin/blob/master/LICENSE">
       <img src="https://img.shields.io/badge/License-MIT-yellow.svg" />
     </a>
